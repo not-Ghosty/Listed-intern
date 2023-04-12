@@ -1,0 +1,664 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+#board_div {
+  width: 400px;
+  height: 657px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+}
+#login {
+  width: 1000px;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+#card {
+  width: 35%;
+  height: 60%;
+}
+#sign {
+  margin-top: 5px;
+  font-weight: 600;
+}
+#goap_div {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  width: 360px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#goap_div span {
+  margin-top: 10px;
+  background-color: white;
+  color: rgb(174, 171, 171);
+  width: 170px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#goap_div img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+#details {
+  background-color: white;
+  padding-left: 25px;
+  padding-top: 20px;
+  width: 360px;
+  height: 300px;
+  border-radius: 12px;
+}
+#details > label {
+  font-weight: 600;
+}
+#details > input {
+  width: 90%;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(245, 245, 245);
+  font-size: medium;
+  font-weight: 600;
+}
+#details > p,
+#register {
+  color: rgb(90, 135, 220);
+  font-weight: 600;
+}
+
+#details > button {
+  margin-top: 15px;
+  font-size: medium;
+  width: 90%;
+  height: 35px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: black;
+  margin-left: 0px;
+  cursor: pointer;
+  font-weight: 600;
+}
+#details a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+#last {
+  text-align: center;
+}
+
+#profileicon {
+  width: 30px !important;
+  height: 31px !important;
+  border-radius: 50%;
+}
+
+#main_div {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  z-index: 2;
+  display: flex;
+}
+
+#mainboard_div {
+  margin-left: 25px;
+  background-color: black;
+  width: 200px;
+  height: 944px;
+  margin-top: 28px;
+  border-radius: 28px;
+}
+#mainboard_div h1 {
+  color: white;
+  padding-top: 35px;
+  padding-left: 40px;
+}
+#mainlist a {
+  text-decoration: none;
+  color: rgb(159, 159, 159);
+}
+#mainlist a:hover {
+  color: white;
+}
+#mainlist {
+  padding-top: 25px;
+  width: 100%;
+}
+#mainlist a {
+  width: 100%;
+}
+#mainlist li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: smaller;
+  height: 40px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+#mainlist img {
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+}
+
+.help {
+  display: block;
+  color: rgb(159, 159, 159);
+  /* background-color: aqua; */
+  padding-left: 45px;
+  font-size: 12px;
+  margin-top: 15px;
+  position: relative;
+  bottom: -520px;
+}
+
+#dashboard {
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(245, 245, 245);
+}
+
+#header {
+  width: 95%;
+  height: 30px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#title {
+  width: 15%;
+}
+#gap_div {
+  width: 45%;
+}
+#search_div {
+  width: 25%;
+  display: flex;
+}
+#search_div input {
+  height: 100%;
+  width: 80%;
+  color: rgb(220, 217, 217);
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#search_div img {
+  width: 20%;
+  height: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#propic {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#propic img {
+  width: 25%;
+  height: 100%;
+}
+#bellicon {
+  width: 35px !important;
+  height: 35px !important;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+#mainstats_div {
+  display: flex;
+  width: 93%;
+  margin-left: 50px;
+  justify-content: space-between;
+
+  margin-top: 40px;
+}
+
+#mainstat1 {
+  background-color: rgb(221, 239, 224);
+}
+.mainstat p {
+  font-size: small;
+  font-weight: 700;
+}
+.mainstat {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  width: 20%;
+  height: 100px;
+  border-radius: 18px;
+  position: relative;
+}
+#mainstat2 {
+  background-color: rgb(244, 236, 221);
+}
+#mainstat3 {
+  background-color: rgb(239, 218, 218);
+}
+#mainstat4 {
+  background-color: rgb(222, 224, 239);
+}
+#mainstats_div img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+#curvechart_div {
+  width: 93%;
+  margin-top: 35px;
+  margin-left: 50px;
+  height: 359px;
+  background-color: white;
+  border-radius: 25px;
+}
+#curvechart_div h2 {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+#curvechart_div span {
+  color: rgb(192, 191, 191);
+  padding-top: 30px;
+  padding-left: 30px;
+}
+#verylast_div {
+  width: 93%;
+  margin-left: 50px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+#piechart_div {
+  width: 480px;
+  height: 256px;
+  background-color: grey;
+  background-color: white;
+  position: relative;
+  border-radius: 25px;
+}
+#schedule_div {
+  width: 480px;
+  height: 256px;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+#schedule_div span {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+#schedule1 {
+  border-left: 3px solid rgb(155, 221, 124);
+  margin-top: 25px;
+  padding-left: 15px;
+  margin-bottom: 8px;
+}
+#schedule1 h5 #schedule2 h5 {
+  margin-bottom: 5px;
+}
+#schedule1 p,
+#schedule2 p {
+  font-size: small;
+  color: rgb(192, 191, 191);
+  line-height: 20px;
+}
+#schedule2 {
+  border-left: 3px solid rgb(105, 114, 195);
+  margin-top: 15px;
+  padding-left: 15px;
+}
+#piechart_div h2 {
+  margin-top: 35px;
+  margin-left: 30px;
+}
+#piechart_div #kk {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+}
+#pie span {
+  margin-top: 25px;
+}
+h6 {
+  position: absolute;
+}
+#per1 {
+  bottom: 110px;
+  right: 210px;
+}
+#per2 {
+  bottom: 65px;
+  right: 210px;
+}
+#per3 {
+  bottom: 23px;
+  right: 210px;
+}
+#pie {
+  width: 370px;
+  height: 300px;
+}
+
+/* @media (min-width: 1000px) and (max-width: 1599px) { 
+#board_div {
+  width: 40%;
+  height: 1080px;
+}
+#board_div h1 {
+  font-size: 80px;
+}
+#login {
+  width: 100%;
+}
+#card {
+  width: 35%;
+  height: 60%;
+}
+
+#card h1 {
+  font-size: 50px;
+}
+
+#sign {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#goap_div {
+  width: 450px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#goap_div span {
+  margin-top: 10px;
+  width: 220px;
+  height: 40px;
+  font-size: large;
+}
+#goap_div img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+#details {
+  padding-left: 25px;
+  padding-top: 20px;
+  width: 450px;
+  height: 320px;
+  border-radius: 12px;
+}
+#details > label {
+  font-size: medium;
+  font-weight: 600;
+  font-size: large;
+}
+#details > input {
+  width: 90%;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: 600;
+}
+#details > p,
+#register {
+  font-weight: 600;
+  font-size: large;
+}
+
+#details > button {
+  margin-top: 15px;
+  font-size: large;
+  width: 90%;
+  height: 50px;
+  border-radius: 17px;
+
+  margin-left: 0px;
+}
+
+#last {
+  text-align: center;
+  font-size: large;
+}*/
+
+@media (min-width: 1600px) {
+  #board_div {
+    height: 1080px;
+    width: 40%;
+  }
+  #board_div h1 {
+    font-size: 80px;
+  }
+  #login {
+    width: 100%;
+  }
+  #card {
+    width: 35%;
+    height: 60%;
+  }
+
+  #card h1 {
+    font-size: 50px;
+  }
+
+  #sign {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #goap_div {
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #goap_div span {
+    margin-top: 10px;
+    width: 220px;
+    height: 40px;
+    font-size: large;
+  }
+  #goap_div img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  #details {
+    padding-left: 25px;
+    padding-top: 20px;
+    width: 450px;
+    height: 320px;
+    border-radius: 12px;
+  }
+  #details > label {
+    font-size: medium;
+    font-weight: 600;
+    font-size: large;
+  }
+  #details > input {
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: 600;
+  }
+  #details > p,
+  #register {
+    font-weight: 600;
+    font-size: large;
+  }
+
+  #details > button {
+    margin-top: 15px;
+    font-size: large;
+    width: 90%;
+    height: 50px;
+    border-radius: 17px;
+
+    margin-left: 0px;
+  }
+
+  #last {
+    text-align: center;
+    font-size: large;
+  }
+
+  #dashboard {
+    width: 100%;
+    height: 1080px;
+  }
+  #mainboard_div {
+    margin-left: 25px;
+
+    width: 300px;
+    height: 920px;
+    margin-top: 28px;
+    border-radius: 28px;
+  }
+  #main_div {
+    width: 100%;
+    height: 1080px;
+  }
+  #search_div img {
+    width: 25%;
+    height: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  #verylast_div {
+    width: 93%;
+    margin-left: 50px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #piechart_div {
+    width: 45%;
+    height: 320px;
+    background-color: grey;
+    background-color: white;
+    position: relative;
+    border-radius: 25px;
+  }
+  #schedule_div {
+    width: 45%;
+    height: 320px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  #schedule_div h2 {
+    font-size: xx-large;
+  }
+  #schedule_div span {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: x-large;
+  }
+  #schedule1 {
+    border-left: 5px solid rgb(155, 221, 124);
+    margin-top: 30px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+  #schedule1 h5,
+  #schedule2 h5 {
+    margin-bottom: 5px;
+    font-size: larger;
+  }
+  #schedule1 p,
+  #schedule2 p {
+    font-size: medium;
+    line-height: 20px;
+  }
+  #schedule2 {
+    border-left: 3px solid rgb(105, 114, 195);
+    margin-top: 25px;
+    padding-left: 30px;
+  }
+  #piechart_div h2 {
+    margin-top: 35px;
+    margin-left: 30px;
+    font-size: xx-large;
+  }
+  #piechart_div #kk {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    font-size: x-large;
+  }
+  #kk img {
+    width: 20px;
+    height: 20px;
+  }
+  #pie span {
+    margin-top: 25px;
+    font-size: medium !important;
+  }
+  h6 {
+    position: absolute;
+    color: rgb(209, 207, 207);
+  }
+  #per1 {
+    font-size: large;
+    bottom: 155px;
+    right: 430px;
+  }
+  #per2 {
+    font-size: large;
+    bottom: 110px;
+    right: 430px;
+  }
+  #per3 {
+    font-size: large;
+    bottom: 60px;
+    right: 430px;
+  }
+  #pie {
+    width: 370px;
+    height: 300px;
+  }
+}
