@@ -374,88 +374,88 @@ h6 {
   height: 300px;
 }
 
-/* @media (min-width: 1000px) and (max-width: 1599px) { 
-#board_div {
-  width: 40%;
-  height: 1080px;
-}
-#board_div h1 {
-  font-size: 80px;
-}
-#login {
-  width: 100%;
-}
-#card {
-  width: 35%;
-  height: 60%;
-}
+@media (min-width: 300px) and (max-width: 1000px) {
+  #board_div {
+    width: 50%;
+    height: 740px;
+  }
+  #board_div h1 {
+    font-size: 30px;
+  }
+  #login {
+    width: 100%;
+  }
+  #card {
+    width: 90%;
+    height: 60%;
+  }
 
-#card h1 {
-  font-size: 50px;
-}
+  #card h1 {
+    font-size: 20px;
+  }
 
-#sign {
-  margin-top: 5px;
-  font-size: 20px;
-  font-weight: 600;
-}
-#goap_div {
-  width: 450px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-#goap_div span {
-  margin-top: 10px;
-  width: 220px;
-  height: 40px;
-  font-size: large;
-}
-#goap_div img {
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-}
-#details {
-  padding-left: 25px;
-  padding-top: 20px;
-  width: 450px;
-  height: 320px;
-  border-radius: 12px;
-}
-#details > label {
-  font-size: medium;
-  font-weight: 600;
-  font-size: large;
-}
-#details > input {
-  width: 90%;
-  height: 40px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  font-size: medium;
-  font-weight: 600;
-}
-#details > p,
-#register {
-  font-weight: 600;
-  font-size: large;
-}
+  #sign {
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  #goap_div {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #goap_div span {
+    margin-top: 10px;
+    width: 45%;
+    height: 25px;
+    font-size: x-small;
+  }
+  #goap_div img {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+  }
+  #details {
+    padding-left: 25px;
+    padding-top: 20px;
+    width: 90%;
+    height: 65%;
+    border-radius: 12px;
+  }
+  #details > label {
+    font-size: small;
+    font-weight: 600;
+  }
+  #details > input {
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: small;
+    font-weight: 600;
+  }
+  #details > p,
+  #register {
+    font-weight: 600;
+    font-size: small;
+  }
 
-#details > button {
-  margin-top: 15px;
-  font-size: large;
-  width: 90%;
-  height: 50px;
-  border-radius: 17px;
+  #details > button {
+    margin-top: 15px;
+    font-size: large;
+    width: 90%;
+    height: 50px;
+    border-radius: 17px;
 
-  margin-left: 0px;
+    margin-left: 0px;
+  }
+
+  #last {
+    text-align: center;
+    font-size: small;
+  }
 }
-
-#last {
-  text-align: center;
-  font-size: large;
-}*/
 
 @media (min-width: 1600px) {
   #board_div {
